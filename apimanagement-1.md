@@ -13,7 +13,7 @@
 
 ## Create an API Management instance
 
-An instance can take sometime to provision - so have one created in advance of any demo.
+Plan 40-45 minutes for your instance provisioning time - keep this in mind when planning demos and workshops
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.ApiManagement)
 
@@ -23,6 +23,7 @@ Use appropriate values and hit [Create] to provision the service.
 
 - The service name must be unique.
 - For demo purposes, use the Developer tier.
+- Do not worry about walking through additional configuration settings at this stage.
 
 ![API Management](Images/APIManagement.png)
 
