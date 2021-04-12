@@ -1,4 +1,4 @@
-# API Management - Hands-on Lab Script - Prerrequisites
+# API Management - Hands-on Lab Script - Prerequisites
 
 - Lab Prerequisites (You are here)
 - [Part 1 - Create an API Management instance](apimanagement-1.md)
