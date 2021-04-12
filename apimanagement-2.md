@@ -78,7 +78,7 @@ Select Starter Product and subscribe to a "Starter" subscription. **Note**: "Sta
 
 ![](Images/APIMDevSubscribe.png)
 
-Once you have subscribed to the Starter Product, Select Unlimited Product and subscribe to an "Unlimited" subscription. Remember, the name of the subscription does not have to mirror the name of the product to which you are subscribing. 
+Once you have subscribed to the Starter Product, Select the Unlimited Product and subscribe to an "Unlimited" subscription. Remember, the name of the subscription does not have to mirror the name of the product to which you are subscribing. 
   - Check email - the subscription requires approval 
 
 Check the user profile page - see products and keys
@@ -86,7 +86,7 @@ Check the user profile page - see products and keys
 
 ![](Images/APIMDevSubscribe2.png)
 
-The "Unlimited" is in "submitted" state, as it requires approval. You can, as an admin, go into the `subcriptions` blade to approve it.
+The "Unlimited" subscription is in "submitted" state, as it requires approval. You can, as an admin, go into the `Subscriptions` blade in the Azure Portal to approve the request.
 
 #### Try an API
 
