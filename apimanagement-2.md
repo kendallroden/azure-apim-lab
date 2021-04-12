@@ -12,51 +12,58 @@
 
 ## Developer Portal
 
-The developer portal is an automatically generated, fully customizable website with the documentation of your APIs. It is where API consumers can discover your APIs, learn how to use them, request access, and try them out. 
+The developer portal is an automatically generated, fully customizable website with the documentation of your APIs. It is where API consumers can discover your APIs, learn how to use them, request access, and try them out. The following resource may be beneficial for you to review or reference as you work through the lab:
+
+[Developer Portal Overview](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal)
 
 ### Publishing the developer portal
 
-Accessing from the link in the Overview blade of the Azure Management Portal, will display the developer portal in admin / edit mode and you can customize it.
-Using the left-side menu `Portal Overview` Icon - select the `Publish` button.  It will then be available for users to access.
+You can access the developer portal from the link in the Overview blade of the Azure Management Portal; this link will display the developer portal in admin / edit mode for you to customize. Using the left-side menu `Portal Overview` Icon - select the `Publish` button.  It will then be available for users to access. 
+
+**NOTE**: In order to confirm the Developer portal has been published, refresh the page and check for the "Last Published" time stamp above the `Publish` button. If there is not one, try selecting `Publish` again and repeating the refresh process.
 
 ![](Images/apim-developerportal-publish.png)
+
+In addition to publishing the developer portal via the Azure Portal, you can also do so directly from the admin view of the developer portal as well. 
+
+![](Images/apim-developerportal-opstab.png) 
+
+![](Images/apim-developerportal-adminpublish.png)
 
 ### Enabling CORS for the developer portal
 
 Cross-origin resource sharing is a mechanism that allows resources on a web page to be requested from another domain, outside the domain from which the first resource was served. CORS is required to let portal visitors use the interactive console in the API reference pages and should be enabled for domains, including custom domains.
 
-CORS is enabled by using policies, we will go deep on this topic in part 4. For now we will enable this using a builtin UI. To do this, using the left-side menu `Portal Overview` Icon - select the `Enable CORS` button.
+CORS is enabled by using policies, we will go deep on this topic in part 4. For now we will enable this using a built-in policy. To do this, using the left-side menu `Portal Overview` Icon - select the `Enable CORS` button.
 
 ![](Images/apim-developerportal-CORS.png)
 
-After publishing the portal and enabling CORS, we should access the developer portal located at: {apim-service-name}.developer.azure-api.net
-
-![](Images/APIMDeveloperPortal.png)
-
+After publishing the portal and enabling CORS, you should be able to access the developer portal located at `{apim-service-name}.developer.azure-api.net`. Do so using a private or incognito browser tab in order to view the developer portal as an end-user vs. viewing in edit mode as an admin.
 
 ### User Experience
 
-Let's experience how your users will navigate through your portal
+Let's experience how your users will navigate through the developer portal
 
 #### Anonymous User
 
-As an unauthenticated user (=open URL in a new browser), look around the developer portal, and check the Products.
+As an unauthenticated user- *remember note above to leverage a private or incognito browser tab*- look around the developer portal, and check out the available Products.
 
 > Notice the difference between the Starter & Unlimited products
 
 ![](Images/APIMDevPortalProducts.png)
 
-You can also check the APIs. As you can see, all operations exposed are described and can also be tested directly within the portal.
+You can also check the APIs. As you can see, all operations exposed have a description and can be tested directly from within the portal.
 
 ![](Images/APIMDevPortalAPIs.png)
 
 #### Register for an account
+**Keep in mind: All steps below assume you are browsing the website as an unauthenticated user**
 
-Let's sign up for an account (If logged in as Administrator - log out)
+Let's sign up for a user account
 
 ![](Images/APIMDevSignup.png)
 
-Check acceptance email and confirm to activate account
+Once signed up, check for an acceptance email and confirm to activate your account
 
 ![](Images/APIMDevSignupEmail.png)
 
@@ -64,21 +71,22 @@ Sign into account
 
 ![](Images/APIMDevSignin.png)
 
+#### Subscribe to Products 
 
-Select Starter Product and subscribe to a "Starter" subscription
-  - Check email - subscription has been accepted and some key information are provided
-
-Select Unlimited Product and subscribe to an "Unlimited" subscription
-  - Check email - the subscription requires approval 
+Select Starter Product and subscribe to a "Starter" subscription. **Note**: "Starter" is an arbitrary name that we have recommended for your subscription. This name does not have to be the same as the Product name to which you are subscribing. 
+  - Check email - subscription has been accepted and some key information is provided
 
 ![](Images/APIMDevSubscribe.png)
+
+Once you have subscribed to the Starter Product, Select Unlimited Product and subscribe to an "Unlimited" subscription. Remember, the name of the subscription does not have to mirror the name of the product to which you are subscribing. 
+  - Check email - the subscription requires approval 
 
 Check the user profile page - see products and keys
   - Note that the Unlimited subscription is not yet *Active* as this request has not yet been approved (status=submitted)
 
 ![](Images/APIMDevSubscribe2.png)
 
-The "Unlimited" being in "submitted" state (=needs approval), you can, in Azure Portal, go in the `subcriptions` blade to approve it.
+The "Unlimited" is in "submitted" state, as it requires approval. You can, as an admin, go into the `subcriptions` blade to approve it.
 
 #### Try an API
 
@@ -86,11 +94,11 @@ It's now time to test one of the published APIs. Open the APIs page and look at 
   - Notice the developer information
   - Test the Echo API using the GET verb 
 
-![](Images/APIMDevTryAPI.png)
+![](Images/APIM-TryEchoAPI.png)
 
-![](Images/APIMDevTryAPI2.png)
+![](Images/APIM-TryEchoAPIPart2.png)
 
-### Customising the Developer Portal
+### Customizing the Developer Portal
 
 #### Site Configuration
 
@@ -128,21 +136,21 @@ A product contains one or more APIs as well as a usage quota and the terms of us
 
 Again in the Azure Management portal, open the left menu `Products `
 
-![](Images/APIMProducts.png)
+![](Images/APIMProductList.png)
 
-Add a new product - for example a Gold tier - change its visibility (Published) and click on the [Create] button
+Add a new product - for example a Gold tier - change its visibility `Published` and click on the `Create` button
 
 ![](Images/APIMAddProduct.png)
 
-![](Images/APIMAddProduct2.png)
+![](Images/APIMAddProduct-ProductView.png)
 
 Set Access Controls to allow access to developers and guests
 
-![](Images/APIMAddProductsAccess.png)
+![](Images/AddProductsAccessControl.png)
 
 Once saved, see the new Gold Tier product in the Developer portal
 
-![](Images/APIMAddProductsDevPortal.png)
+![](Images/ProductAddedToDevPortal.png)
 
 ---
 [Home](README.md) | [Prev](apimanagement-1.md) | [Next](apimanagement-3.md)
