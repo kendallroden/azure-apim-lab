@@ -6,7 +6,7 @@ This hands-on-lab will guide you through the different concepts around Azure API
 
 Index
 
-- [Lab Prerrequisites](apimanagement-prerrequisites.md)
+- [Lab Prerequisites](apimanagement-prerequisites.md)
 - [Part 1 - Create an API Management instance](apimanagement-1.md)
 - [Part 2 - Developer Portal and Product Management](apimanagement-2.md)
 - [Part 3 - Adding API's](apimanagement-3.md)

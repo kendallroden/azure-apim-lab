@@ -1,6 +1,6 @@
-# API Management - Hands-on Lab Script - prerrequisite
+# API Management - Hands-on Lab Script - Prerrequisites
 
-- Lab Prerrequisites (You are here)
+- Lab Prerequisites (You are here)
 - [Part 1 - Create an API Management instance](apimanagement-1.md)
 - [Part 2 - Developer Portal and Product Management](apimanagement-2.md)
 - [Part 3 - Adding API's](apimanagement-3.md)

@@ -1,6 +1,6 @@
 # API Management - Hands-on Lab Script - part 1
 
-- [Lab Prerrequisites](apimanagement-prerrequisites.md)
+- [Lab Prerequisites](apimanagement-prerequisites.md)
 - Part 1 - Create an API Management instance (You are here)
 - [Part 2 - Developer Portal and Product Management](apimanagement-2.md)
 - [Part 3 - Adding API's](apimanagement-3.md)
@@ -31,11 +31,9 @@ Once the service has been provisioned, there will be:
 - Publisher Administration - (now located in the Azure Management Portal - the older Publisher portal has now been deprecated)
 - Developer portal
 - Gateway
-
-
 The link to the developer portal is at the top of the Overview blade.
 
 ![](Images/APIMOverviewBlade.png)
 
 ---
-[Home](README.md) | [Prev](apimanagement-prerrequisites.md) | [Next](apimanagement-2.md)
+[Home](README.md) | [Prev](apimanagement-prerequisites.md) | [Next](apimanagement-2.md)
